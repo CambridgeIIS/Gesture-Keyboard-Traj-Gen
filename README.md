@@ -1,5 +1,11 @@
 ## Simulating Realistic Human Motion Trajectories of Mid-Air Gesture Typing
+The code in this repository is an implementation of the different models and algorithms described in the ISMAR paper:
 
+	Junxiao Shen, John Dudley, Per Ola Kristensson,
+	Simulating Realistic Human Motion Trajectories of Mid-Air Gesture Typing, 
+	ISMAR 2021
+    
+    
 The eventual success of many AR and VR intelligent interactive systems relies on the ability to collect user motion data at large scale.
 Realistic simulation of human motion trajectories is a potential solution to this problem. 
 Simulated user motion data can facilitate prototyping and speed up the design process.
