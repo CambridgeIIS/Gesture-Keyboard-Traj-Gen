@@ -1,0 +1,32 @@
+# Loss and Optimizer (AdamOptimizer for both G, D and R)
+setup_optimizer.g_lr = 2E-4
+setup_optimizer.d_lr = 2E-4
+setup_optimizer.beta_1 = 0.0
+setup_optimizer.beta_2 = 0.999
+setup_optimizer.loss_fn = @not_saturating       #@hinge
+setup_optimizer.disc_iters=1                    #2
+
+# Shared specs (G and D)
+shared_specs.batch_sz = 64
+shared_specs.enc_units = 64
+shared_specs.param_dim = 2
+shared_specs.dec_units = 64
+shared_specs.max_x_length = 320
+shared_specs.max_c_length = 20
+shared_specs.epochs = 20
+shared_specs.input_dim = 2
+
+# I/O and data structure
+io.base_path = '/home/shawn/desktop/GAN_DE/'
+io.checkpoint_dir = '/res/training_checkpoints'
+io.gen_imgs_dir = '/res/images/'
+io.model_dir = '/res/model/'
+
+
+# Dataset
+io.buffer_size = 800
+io.raw_dir = '/data/iamDB/words/'
+io.read_dir = '/data/iamDB/words-Reading/'
+io.log_dir = '/res/log_dir/'
+io.train_dir = '/res/train_dir/'
+io.restore = True
