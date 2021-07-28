@@ -130,5 +130,6 @@ Tensorflow 2 implementation of the model in the paper <a href="https://arxiv.org
 ```
 
   ### Reference 
-[1] Shen, Junxiao, John Dudley, and Per Ola Kristensson. "The Imaginative Generative Adversarial Network: Automatic Data Augmentation for Dynamic Skeleton-Based Hand Gesture and Human Action Recognition." arXiv preprint arXiv:2105.13061 (2021).
+[1] Shen, Junxiao, John Dudley, and Per Ola Kristensson. "The Imaginative Generative Adversarial Network: Automatic Data Augmentation for Dynamic Skeleton-Based Hand Gesture and Human Action Recognition." arXiv preprint arXiv:2105.13061 (2021)
+
 [2] Graves, Alex. "Generating sequences with recurrent neural networks." arXiv preprint arXiv:1308.0850 (2013).
