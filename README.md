@@ -1,3 +1,4 @@
+
 ## Simulating Realistic Human Motion Trajectories of Mid-Air Gesture Typing
 The code in this repository is an implementation of the different models and algorithms described in the ISMAR paper:
 
@@ -95,7 +96,7 @@ Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org
 - **Setting dependencies** 
 ```
   $ pip install -r requrements.txt
-    
+ ```
 
 - **Train the model**
  ```
@@ -105,7 +106,7 @@ Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org
 - **Generate synthezied trajectories**
  ```
   $ python Os_run_auto.py
-  
+   ```
 
 ### 4. RNN-Based TF2
 
