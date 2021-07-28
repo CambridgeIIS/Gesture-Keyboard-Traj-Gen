@@ -1,3 +1,6 @@
+<p align = "left">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/image.png">
+</p> 
 
 ## Simulating Realistic Human Motion Trajectories of Mid-Air Gesture Typing
 The code in this repository is an implementation of the different models and algorithms described in the ISMAR paper:
