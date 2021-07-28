@@ -61,7 +61,7 @@ Trajectories synthesized from the GAN-based generative model in the \textit{Tran
 Trajectories synthesized from the GAN-based generative model in the \textit{Imitation} setting, where the style is transferred within the original dataset, such that different variants of original trajectories are produced. The corresponding phrase is `I talked to Duran'.
 </p> 
 
-Tensorflow 2 implementation of the Imaginative GAN with two modes - one is GAN-Transfer and the other is GAN-Imitation.
+Tensorflow 2 implementation of the Imaginative GAN[1] with two modes - one is GAN-Transfer and the other is GAN-Imitation.
 #### Usage
 - **Setting dependencies** 
 ```
@@ -89,7 +89,7 @@ Tensorflow 2 implementation of the Imaginative GAN with two modes - one is GAN-T
     
 Trajectories synthesized from the Recurrent Neural Network (RNN)-based generative model. The corresponding phrase is `I talked to Duran'. 
 </p> 
-Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org/abs/1308.0850">Generating Sequences with Recurrent Neural Networks</a> by Alex Graves.
+Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org/abs/1308.0850">Generating Sequences with Recurrent Neural Networks</a>[2] by Alex Graves.
 
 #### Usage
 - **Setting dependencies** 
@@ -111,7 +111,7 @@ Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org
 
 
 
-Tensorflow 2 implementation of the model in the paper <a href="https://arxiv.org/abs/1308.0850">Generating Sequences with Recurrent Neural Networks</a> by Alex Graves. Code is built based on <a href="https://github.com/sjvasquez/handwriting-synthesis">handwriting-synthesis</a>
+Tensorflow 2 implementation of the model in the paper <a href="https://arxiv.org/abs/1308.0850">Generating Sequences with Recurrent Neural Networks</a>[2] by Alex Graves. Code is built based on <a href="https://github.com/sjvasquez/handwriting-synthesis">handwriting-synthesis</a>
 
 #### Usage
 - **Setting dependencies** 
@@ -129,3 +129,6 @@ Tensorflow 2 implementation of the model in the paper <a href="https://arxiv.org
   $ python drawing.py
 ```
 
+  ### Reference 
+[1] Shen, Junxiao, John Dudley, and Per Ola Kristensson. "The Imaginative Generative Adversarial Network: Automatic Data Augmentation for Dynamic Skeleton-Based Hand Gesture and Human Action Recognition." arXiv preprint arXiv:2105.13061 (2021).
+[2] Graves, Alex. "Generating sequences with recurrent neural networks." arXiv preprint arXiv:1308.0850 (2013).
