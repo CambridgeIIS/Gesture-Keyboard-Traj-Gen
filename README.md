@@ -13,7 +13,7 @@ The GAN-based model shows significant potential for generating synthetic motion 
 The implementations in this repository can enable readers better replicate our experiments and use the models as a rapid synthetic tools. 
 
 <p align = "center">
-<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/img/real_trace.pdf">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/real_trace.pdf">
 </p> 
 
 ## Getting started 
@@ -21,7 +21,7 @@ The implementations in this repository can enable readers better replicate our e
 ### 1. Jerk-Minimization
 
 <p align = "center">
-<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/img/real_trace.pdf">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/real_trace.pdf">
 </p> 
 
 Implementation of the Jerk-Minimization Model. Code is built based on <a href="https://github.com/icsl-Jeon/traj_gen">traj_gen : a continuous trajectory generation with simple API </a>
