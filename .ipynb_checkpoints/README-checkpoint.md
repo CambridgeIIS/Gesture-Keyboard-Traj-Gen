@@ -51,6 +51,7 @@ Trajectories synthesized from the GAN-based generative model in the \textit{Tran
 
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/imitation_gan_data.jpg">
+    
 Trajectories synthesized from the GAN-based generative model in the \textit{Imitation} setting, where the style is transferred within the original dataset, such that different variants of original trajectories are produced. The corresponding phrase is `I talked to Duran'.
 </p> 
 
