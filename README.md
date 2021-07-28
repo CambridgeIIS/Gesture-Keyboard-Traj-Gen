@@ -15,7 +15,7 @@ The implementations in this repository can enable readers better replicate our e
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/real_trace.jpg">
     
-Real trace for the phrase, `I talked to Duran'. Trace start is shown by the blue `X' and then the trace transitions through green and finishes at the yellow `X'.
+Real trace for the phrase,  'I talked to Duran'. Trace start is shown by the blue X  and then the trace transitions through green and finishes at the yellow `X'.
 </p> 
 
 ## Getting started 
