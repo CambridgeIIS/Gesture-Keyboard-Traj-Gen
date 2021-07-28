@@ -23,6 +23,7 @@ The implementations in this repository can enable readers better replicate our e
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/jm_trace.jpg">
 </p> 
+*image_caption*
 
 Implementation of the Jerk-Minimization Model. Code is built based on <a href="https://github.com/icsl-Jeon/traj_gen">traj_gen : a continuous trajectory generation with simple API </a>
 
@@ -30,11 +31,12 @@ Two examples are listed, to generate synthezied trajectories for demo:
 - **optim_example** 
 ```
   $ python optim_example.py
-  
+```  
   
 - **poly_example** 
 ```
   $ python poly_example.py
+```
 
 ### 2. GAN-Based
 <p align = "center">
@@ -50,22 +52,22 @@ Tensorflow 2 implementation of the Imaginative GAN with two modes - one is GAN-T
 - **Setting dependencies** 
 ```
   $ pip install -r requrements.txt
-
+```
 
 - **Set Parameters**
 ```
   $ nano de_gan.gin
-
+```
 
 - **Train the model**
- ```
+```
   $ python cycle_main.py
-  
+```
   
 - **Generate synthezied trajectories**
  ```
   $ python inference.py
-  
+``` 
 
 ### 3. RNN-Based TF1
 <p align = "center">
@@ -82,7 +84,7 @@ Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org
 - **Train the model**
  ```
   $ python run.py --train
-  
+```
   
 - **Generate synthezied trajectories**
  ```
@@ -99,15 +101,15 @@ Tensorflow 2 implementation of the model in the paper <a href="https://arxiv.org
 - **Setting dependencies** 
 ```
   $ pip install -r requrements.txt
-    
+``` 
 
 - **Train the model**
  ```
   $ python rnn.py
-  
+```
   
 - **Generate synthezied trajectories**
  ```
   $ python drawing.py
-  
+```
 
