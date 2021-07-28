@@ -22,8 +22,9 @@ The implementations in this repository can enable readers better replicate our e
 
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/jm_trace.jpg">
+   Jerk-Minimization
 </p> 
-*image_caption*
+
 
 Implementation of the Jerk-Minimization Model. Code is built based on <a href="https://github.com/icsl-Jeon/traj_gen">traj_gen : a continuous trajectory generation with simple API </a>
 
