@@ -14,6 +14,7 @@ The implementations in this repository can enable readers better replicate our e
 
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/real_trace.jpg">
+    
 Real trace for the phrase, `I talked to Duran'. Trace start is shown by the blue `X' and then the trace transitions through green and finishes at the yellow `X'.
 </p> 
 
@@ -23,6 +24,7 @@ Real trace for the phrase, `I talked to Duran'. Trace start is shown by the blue
 
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/jm_trace.jpg">
+    
 Trajectory synthesized from the Jerk-Minimization model for the phrase, `I talked to Duran'. 
 </p> 
 
@@ -43,6 +45,7 @@ Two examples are listed, to generate synthezied trajectories for demo:
 ### 2. GAN-Based
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/transfer_gan_data.jpg">
+    
 Trajectories synthesized from the GAN-based generative model in the \textit{Transfer} setting, where the style is transferred from the original trajectories to trajectories that simply connect the key centers for the corresponding phrase.  The corresponding phrase is `I talked to Duran'. 
 </p> 
 
@@ -76,6 +79,7 @@ Tensorflow 2 implementation of the Imaginative GAN with two modes - one is GAN-T
 ### 3. RNN-Based TF1
 <p align = "center">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/rnn_trace.jpg">
+    
 Trajectories synthesized from the Recurrent Neural Network (RNN)-based generative model. The corresponding phrase is `I talked to Duran'. 
 </p> 
 Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org/abs/1308.0850">Generating Sequences with Recurrent Neural Networks</a> by Alex Graves.
