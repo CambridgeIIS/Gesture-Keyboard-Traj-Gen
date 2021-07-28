@@ -98,8 +98,8 @@ def main():
     logging.info('batch_sz : %d , enc_units: %d, param_dim %d , dec_units %d , max_c_length %d , max_x_length %d , epochs %d , input_dim %d '%(
         batch_sz, enc_units, param_dim, dec_units, max_c_length, max_x_length, epochs, input_dim))
     # load and preprocess dataset (python generator)
-    real_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length,'real')
-    fake_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length,'real')
+    real_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length)
+    fake_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length)
 
     # init generator, discriminator and recognizer
     generator_g = make_generator_no_label(enc_units, batch_sz, param_dim, dec_units, gen_path, max_x_length, max_c_length,

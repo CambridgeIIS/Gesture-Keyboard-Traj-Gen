@@ -19,13 +19,13 @@ alphabet = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 alphabet_ord = list(map(ord, alphabet))
 alpha_to_num = defaultdict(int, list(map(reversed, enumerate(alphabet))))
 
-def load_prepare_data_real(batch_size, max_x_length, max_c_length,data_type):
+def load_prepare_data_real(batch_size, max_x_length, max_c_length):
     print('start loading real data')
 
     # num = 800
     np_load_old = partial(np.load)
     np.load = lambda *a, **k: np_load_old(*a, allow_pickle=True, **k)
-    # data_type = 'real'
+    data_type = 'real'
     input_data = np.load('{}_data.npy'.format(data_type))
     label_data = np.load('{}_label.npy'.format(data_type))
     input_data = np.array(input_data)
@@ -84,14 +84,6 @@ def load_prepare_data_real(batch_size, max_x_length, max_c_length,data_type):
             stroke_batch[i,:len(input_data[sample_idx]),:] = input_data[sample_idx]
             label_batch[i,:len( label_data[sample_idx])] = label_data[sample_idx]
 
-        # stroke_batch = []
-        # label_batch = []
-        #
-        # for i in range(batch_size):
-        #     # retrieve random samples from bucket of size batch_size
-        #     sample_idx = random.randint(0, len(input_data) - 1)
-        #     stroke_batch.append(input_data[sample_idx])
-        #     label_batch.append(label_data[sample_idx])
 
         yield (stroke_batch, label_batch)
 
@@ -390,5 +382,4 @@ def fake_generator_saver(max_c_length, max_x_length):
 
 
 if __name__ == "__main__":
-
     fake_generator_saver(preprocess.MAX_CHAR_LEN, preprocess.MAX_CHAR_LEN*preprocess.tsteps_asii_)
