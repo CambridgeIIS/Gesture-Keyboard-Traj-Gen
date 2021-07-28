@@ -88,8 +88,9 @@ This is to produce a dataset of simple synthetic trajectories that only connects
     fake_dataset = load_prepare_data_fake(batch_sz, max_x_length, max_c_length)
 ```
 - **To set GAN-T mode**
-- Chaneg the corresponding dataloader in cycle_main.py.
-- ```python
+
+ Chaneg the corresponding dataloader in cycle_main.py.
+ ```python
     real_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length)
     fake_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length)
 ```

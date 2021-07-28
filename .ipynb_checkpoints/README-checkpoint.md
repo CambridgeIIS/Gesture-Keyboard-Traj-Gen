@@ -1,3 +1,4 @@
+
 <p align = "left">
 <img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/image.png">
 </p> 
@@ -77,14 +78,30 @@ Tensorflow 2 implementation of the Imaginative GAN[1] with two modes - one is GA
   $ nano de_gan.gin
 ```
 
-- **Train the model**
+- **To set GAN-T mode**
 ```
-  $ python cycle_main.py
+  $ python data_utils.py 
+```
+This is to produce a dataset of simple synthetic trajectories that only connects the center of via-points (keys). Then set the corresponding dataloader in cycle_main.py. 
+```python
+    real_dataset = load_prepare_data_fake(batch_sz, max_x_length, max_c_length)
+    fake_dataset = load_prepare_data_fake(batch_sz, max_x_length, max_c_length)
+```
+- **To set GAN-T mode**
+
+ Chaneg the corresponding dataloader in cycle_main.py.
+ ```python
+    real_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length)
+    fake_dataset = load_prepare_data_real(batch_sz, max_x_length, max_c_length)
+```
+  - **Train the model**
+```
+	$ python cycle_main.py
 ```
   
 - **Generate synthezied trajectories**
  ```
-  $ python inference.py
+	$ python inference.py
 ``` 
 
 ### 3. RNN-Based TF1
