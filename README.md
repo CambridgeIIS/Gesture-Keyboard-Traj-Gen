@@ -13,7 +13,7 @@ The GAN-based model shows significant potential for generating synthetic motion 
 The implementations in this repository can enable readers better replicate our experiments and use the models as a rapid synthetic tools. 
 
 <p align = "center">
-<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/real_trace.pdf">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/real_trace.jpg">
 </p> 
 
 ## Getting started 
@@ -21,7 +21,7 @@ The implementations in this repository can enable readers better replicate our e
 ### 1. Jerk-Minimization
 
 <p align = "center">
-<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/real_trace.pdf">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/jm_trace.jpg">
 </p> 
 
 Implementation of the Jerk-Minimization Model. Code is built based on <a href="https://github.com/icsl-Jeon/traj_gen">traj_gen : a continuous trajectory generation with simple API </a>
@@ -37,6 +37,14 @@ Two examples are listed, to generate synthezied trajectories for demo:
   $ python poly_example.py
 
 ### 2. GAN-Based
+<p align = "center">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/transfer_gan_data.jpg">
+</p> 
+
+<p align = "center">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/imitation_gan_data.jpg">
+</p> 
+
 Tensorflow 2 implementation of the Imaginative GAN with two modes - one is GAN-Transfer and the other is GAN-Imitation.
 #### Usage
 - **Setting dependencies** 
@@ -60,6 +68,9 @@ Tensorflow 2 implementation of the Imaginative GAN with two modes - one is GAN-T
   
 
 ### 3. RNN-Based TF1
+<p align = "center">
+<img src= "https://github.com/shawnshenjx/Gesture-Keyboard-Traj-Gen/blob/main/img/rnn_trace.jpg">
+</p> 
 Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org/abs/1308.0850">Generating Sequences with Recurrent Neural Networks</a> by Alex Graves.
 
 #### Usage
@@ -79,6 +90,9 @@ Tensorflow 1 implementation of the model in the paper <a href="https://arxiv.org
   
 
 ### 4. RNN-Based TF2
+
+
+
 Tensorflow 2 implementation of the model in the paper <a href="https://arxiv.org/abs/1308.0850">Generating Sequences with Recurrent Neural Networks</a> by Alex Graves. Code is built based on <a href="https://github.com/sjvasquez/handwriting-synthesis">handwriting-synthesis</a>
 
 #### Usage
